@@ -1,0 +1,708 @@
+/* Scope resets and font declarations */
+    .sn-root {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      background-color: #FFFFFF !important;
+      color: #101828 !important;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .sn-root *, 
+    .sn-root *::before, 
+    .sn-root *::after {
+      box-sizing: inherit;
+      font-family: inherit;
+    }
+
+    /* Container Utility */
+    .sn-root .sn-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .sn-root .sn-section-padding {
+      padding: 96px 0;
+    }
+
+    /* Badges & Pills */
+    .sn-root .sn-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background-color: #F3F1FF;
+      color: #5036F7;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 100px;
+      letter-spacing: 0.3px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    /* Typography Overrides for WP Themes */
+    .sn-root .sn-section-header {
+      margin-bottom: 56px;
+    }
+
+    .sn-root .sn-section-header.sn-center {
+      text-align: center;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sn-root h1, .sn-root h2, .sn-root h3, .sn-root h4 {
+      color: #101828 !important;
+      margin-top: 0;
+    }
+
+    .sn-root .sn-section-title {
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #101828;
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    .sn-root .sn-section-desc {
+      font-size: 18px;
+      color: #475467;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    /* Buttons */
+    .sn-root .sn-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #5036F7 0%, #3621D0 55%, #4E70D6 100%);
+      color: #FFFFFF !important;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 14px rgba(80, 54, 247, 0.25);
+    }
+
+    .sn-root .sn-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(80, 54, 247, 0.35);
+      color: #FFFFFF !important;
+    }
+
+    .sn-root .sn-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      background: #FFFFFF;
+      color: #101828 !important;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1px solid #E4E7EC;
+      text-decoration: none;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .sn-root .sn-btn-secondary:hover {
+      background-color: #F7F8FC;
+      border-color: #D0D5DD;
+    }
+
+    /* Scroll Animations */
+    .sn-root .sn-fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .sn-root .sn-fade-up.sn-animated {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* SECTION 01 — HERO */
+    .sn-root .sn-hero {
+      padding: 80px 0 96px;
+      background-color: #FFFFFF;
+      text-align: center;
+      position: relative;
+    }
+
+    .sn-root .sn-hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .sn-root .sn-hero h1 {
+      font-size: 56px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: #101828;
+      margin-bottom: 24px;
+    }
+
+    .sn-root .sn-hero p {
+      font-size: 20px;
+      color: #475467;
+      line-height: 1.6;
+      margin-bottom: 36px;
+      font-weight: 400;
+    }
+
+    .sn-root .sn-hero-cta-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 56px;
+      flex-wrap: wrap;
+    }
+
+    .sn-root .sn-hero-workspace {
+      position: relative;
+      max-width: 960px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #E4E7EC;
+      box-shadow: 0 20px 40px rgba(16, 24, 40, 0.08);
+      background: #FFFFFF;
+    }
+
+    .sn-root .sn-hero-main-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sn-root .sn-hero-floating-grid {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .sn-root .sn-hero-chip {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(80, 54, 247, 0.15);
+      border-radius: 10px;
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    .sn-root .sn-hero-chip-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #667085;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .sn-root .sn-hero-chip-val {
+      font-size: 15px;
+      font-weight: 700;
+      color: #101828;
+      margin-top: 2px;
+    }
+
+    /* SECTION 02 — WHAT WE DO */
+    .sn-root .sn-wwd-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .sn-root .sn-wwd-img-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #E4E7EC;
+      height: 100%;
+      min-height: 420px;
+    }
+
+    .sn-root .sn-wwd-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sn-root .sn-wwd-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .sn-root .sn-wwd-item {
+      padding: 18px 24px;
+      background: #FFFFFF;
+      border: 1px solid #E4E7EC;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .sn-root .sn-wwd-item:hover {
+      border-color: #5036F7;
+      transform: translateX(4px);
+    }
+
+    .sn-root .sn-wwd-num {
+      font-size: 14px;
+      font-weight: 700;
+      color: #5036F7;
+      background: #F3F1FF;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+
+    .sn-root .sn-wwd-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #101828;
+    }
+
+    /* SECTION 03 — WORKING METHOD CAROUSEL */
+    .sn-root .sn-method-carousel-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sn-root .sn-method-track {
+      display: flex;
+      gap: 24px;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .sn-root .sn-method-card {
+      min-width: 320px;
+      max-width: 320px;
+      background: #FFFFFF;
+      border: 1px solid #E4E7EC;
+      border-radius: 12px;
+      padding: 32px;
+      flex-shrink: 0;
+      transition: border-color 0.2s ease;
+    }
+
+    .sn-root .sn-method-card:hover {
+      border-color: #5036F7;
+    }
+
+    .sn-root .sn-method-step {
+      font-size: 13px;
+      font-weight: 700;
+      color: #5036F7;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    .sn-root .sn-method-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #101828;
+      margin-bottom: 12px;
+    }
+
+    .sn-root .sn-method-card p {
+      font-size: 15px;
+      color: #475467;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .sn-root .sn-carousel-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .sn-root .sn-carousel-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 1px solid #E4E7EC;
+      color: #101828;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .sn-root .sn-carousel-btn:hover {
+      background: #F3F1FF;
+      border-color: #5036F7;
+      color: #5036F7;
+    }
+
+    .sn-root .sn-carousel-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    /* SECTION 04 — RESEARCH SHOWCASE */
+    .sn-root .sn-report-spread {
+      background: #FFFFFF;
+      border: 1px solid #E4E7EC;
+      border-radius: 16px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+    }
+
+    .sn-root .sn-report-img-side {
+      height: 100%;
+      min-height: 420px;
+    }
+
+    .sn-root .sn-report-img-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sn-root .sn-report-info-side {
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .sn-root .sn-report-info-side h3 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #101828;
+      margin-bottom: 16px;
+    }
+
+    .sn-root .sn-report-info-side p {
+      font-size: 16px;
+      color: #475467;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    /* SECTION 05 — MARKET INTELLIGENCE BANNER */
+    .sn-root .sn-intel-banner {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 32px;
+    }
+
+    .sn-root .sn-intel-banner img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .sn-root .sn-intel-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(16, 24, 40, 0.4) 0%, rgba(16, 24, 40, 0.8) 100%);
+      z-index: 2;
+    }
+
+    .sn-root .sn-intel-content {
+      position: relative;
+      z-index: 3;
+      max-width: 640px;
+    }
+
+    .sn-root .sn-intel-content h2 {
+      font-size: 38px;
+      font-weight: 700;
+      color: #FFFFFF !important;
+      margin-bottom: 16px;
+    }
+
+    .sn-root .sn-intel-content p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 28px;
+    }
+
+    /* SECTION 06 — COMPARISON */
+    .sn-root .sn-comp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .sn-root .sn-comp-box {
+      padding: 40px;
+      border-radius: 12px;
+      border: 1px solid #E4E7EC;
+    }
+
+    .sn-root .sn-comp-box.noise {
+      background: #F7F8FC;
+    }
+
+    .sn-root .sn-comp-box.research {
+      background: #FFFFFF;
+      border-color: #5036F7;
+      box-shadow: 0 8px 24px rgba(80, 54, 247, 0.08);
+    }
+
+    .sn-root .sn-comp-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .sn-root .sn-comp-box.noise .sn-comp-title {
+      color: #667085;
+    }
+
+    .sn-root .sn-comp-box.research .sn-comp-title {
+      color: #5036F7;
+    }
+
+    .sn-root .sn-comp-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .sn-root .sn-comp-item {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #475467;
+    }
+
+    /* SECTION 07 — HUMAN EXPERTISE */
+    .sn-root .sn-human-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .sn-root .sn-human-img {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #E4E7EC;
+    }
+
+    .sn-root .sn-human-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sn-root .sn-human-content h2 {
+      font-size: 34px;
+      font-weight: 700;
+      color: #101828;
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+
+    .sn-root .sn-human-content p {
+      font-size: 17px;
+      color: #475467;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    /* SECTION 08 — TESTIMONIALS */
+    .sn-root .sn-testi-card {
+      background: #FFFFFF;
+      border: 1px solid #E4E7EC;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .sn-root .sn-testi-quote {
+      font-size: 20px;
+      font-weight: 500;
+      color: #101828;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .sn-root .sn-testi-author {
+      font-size: 16px;
+      font-weight: 700;
+      color: #101828;
+    }
+
+    .sn-root .sn-testi-role {
+      font-size: 14px;
+      color: #667085;
+    }
+
+    /* SECTION 09 — SUBSCRIPTION PLANS */
+    .sn-root .sn-plans-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .sn-root .sn-plan-card {
+      background: #FFFFFF;
+      border: 1px solid #E4E7EC;
+      border-radius: 16px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .sn-root .sn-plan-card:hover {
+      border-color: #5036F7;
+      transform: translateY(-4px);
+    }
+
+    .sn-root .sn-plan-card.featured {
+      border-color: #5036F7;
+      box-shadow: 0 12px 32px rgba(80, 54, 247, 0.12);
+    }
+
+    .sn-root .sn-plan-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #101828;
+      margin-bottom: 8px;
+    }
+
+    .sn-root .sn-plan-price {
+      font-size: 32px;
+      font-weight: 700;
+      color: #101828;
+      margin-bottom: 24px;
+    }
+
+    .sn-root .sn-plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sn-root .sn-plan-features li {
+      font-size: 15px;
+      color: #475467;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* SECTION 10 — FINAL CTA */
+    .sn-root .sn-final-cta {
+      background: #F7F8FC;
+      border-top: 1px solid #E4E7EC;
+      text-align: center;
+      padding: 96px 0;
+    }
+
+    .sn-root .sn-final-cta h2 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #101828;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .sn-root .sn-final-cta p {
+      font-size: 18px;
+      color: #475467;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media (max-width: 992px) {
+      .sn-root .sn-hero-floating-grid { grid-template-columns: repeat(2, 1fr); }
+      .sn-root .sn-wwd-grid { grid-template-columns: 1fr; gap: 32px; }
+      .sn-root .sn-wwd-img-wrap { min-height: 280px; height: 280px; }
+      .sn-root .sn-report-spread { grid-template-columns: 1fr; }
+      .sn-root .sn-report-img-side { height: 280px; min-height: 280px; }
+      .sn-root .sn-report-info-side { padding: 32px; }
+      .sn-root .sn-human-grid { grid-template-columns: 1fr; }
+      .sn-root .sn-plans-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .sn-root .sn-section-padding { padding: 60px 0; }
+      .sn-root .sn-section-title { font-size: 28px; }
+      .sn-root .sn-section-desc { font-size: 16px; }
+      .sn-root .sn-hero { padding: 48px 0 60px; }
+      .sn-root .sn-hero h1 { font-size: 34px; }
+      .sn-root .sn-hero p { font-size: 16px; }
+      .sn-root .sn-hero-main-img { height: 320px; }
+      .sn-root .sn-hero-floating-grid {
+        position: relative;
+        bottom: 0; left: 0; right: 0;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 12px;
+        background: #F7F8FC;
+      }
+      .sn-root .sn-hero-chip { padding: 10px; }
+      .sn-root .sn-hero-chip-val { font-size: 13px; }
+      .sn-root .sn-intel-banner { height: 320px; }
+      .sn-root .sn-intel-content h2 { font-size: 26px; }
+      .sn-root .sn-comp-grid { grid-template-columns: 1fr; }
+      .sn-root .sn-comp-box { padding: 24px; }
+    }
+
+/* Preserved inline presentation rules. */
+.sn-root .sn-page-inline-1 { background-color: #F7F8FC !important; border-top: 1px solid #E4E7EC !important; }
+.sn-root .sn-page-inline-2 { background: #F7F8FC !important; border-top: 1px solid #E4E7EC !important; }
+.sn-root .sn-page-inline-3 { background: #F7F8FC !important; border-top: 1px solid #E4E7EC !important; }
+.sn-root .sn-page-inline-4 { background: #F7F8FC !important; border-top: 1px solid #E4E7EC !important; }

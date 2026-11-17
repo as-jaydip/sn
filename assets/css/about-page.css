@@ -1,0 +1,401 @@
+/* ========================================================================= */
+  /* ABOUT PAGE STYLES - HOME PAGE VIBE MATCH (SCOPED)                       */
+  /* ========================================================================= */
+  .sn-about-wrapper {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    color: #101828;
+    background-color: #FFFFFF;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+
+  .sn-about-wrapper *, 
+  .sn-about-wrapper *::before, 
+  .sn-about-wrapper *::after {
+    box-sizing: border-box;
+  }
+
+  .sn-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Core UI Elements Matching Home Page Palette */
+  .sn-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: #F4F3FF;
+    border: 1px solid #E0EAFF;
+    border-radius: 20px;
+    color: #5036F7;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+  }
+
+  .sn-badge-dot {
+    width: 6px;
+    height: 6px;
+    background: #5036F7;
+    border-radius: 50%;
+  }
+
+  .sn-title-lg {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #101828;
+    margin-bottom: 20px;
+  }
+
+  .sn-title-md {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: #101828;
+    margin-bottom: 16px;
+  }
+
+  .sn-text-lead {
+    font-size: 18px;
+    color: #475467;
+    line-height: 1.6;
+  }
+
+  /* Gradient Text Utility */
+  .sn-gradient-text {
+    background: linear-gradient(135deg, #5036F7 0%, #3621D0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* SECTION 1: HERO - BRAND MISSION SPLIT WITH DARK HIGH-GLOSS CARD          */
+  /* ------------------------------------------------------------------------- */
+  .sn-about-hero {
+    padding: 96px 0 80px 0;
+    background: radial-gradient(circle at 90% 10%, rgba(80, 54, 247, 0.06) 0%, rgba(255, 255, 255, 0) 60%);
+  }
+
+  .sn-hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .sn-hero-card-dark {
+    background: #0C111D;
+    border-radius: 24px;
+    padding: 40px;
+    color: #FFFFFF;
+    box-shadow: 0 20px 40px rgba(16, 24, 40, 0.15);
+    border: 1px solid #1D2939;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sn-hero-card-dark::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200px;
+    height: 200px;
+    background: rgba(80, 54, 247, 0.15);
+    filter: blur(60px);
+    border-radius: 50%;
+  }
+
+  .sn-metric-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #1D2939;
+  }
+
+  .sn-metric-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .sn-metric-val {
+    font-size: 32px;
+    font-weight: 800;
+    color: #FFFFFF;
+  }
+
+  .sn-metric-lbl {
+    font-size: 14px;
+    color: #98A2B3;
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* SECTION 2: WHY WE EXIST - CONTRAST STORY CARDS                           */
+  /* ------------------------------------------------------------------------- */
+  .sn-story-section {
+    padding: 90px 0;
+    background: #F9FAFB;
+    border-top: 1px solid #EAECF0;
+    border-bottom: 1px solid #EAECF0;
+  }
+
+  .sn-story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+
+  .sn-story-box {
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(16, 24, 40, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .sn-story-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(16, 24, 40, 0.06);
+  }
+
+  .sn-icon-badge {
+    width: 48px;
+    height: 48px;
+    background: #F4F3FF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .sn-icon-badge svg {
+    width: 24px;
+    height: 24px;
+    stroke: #5036F7;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* SECTION 3: RESEARCH METHODOLOGY - STEPPED HORIZONTAL PROCESS              */
+  /* ------------------------------------------------------------------------- */
+  .sn-process-section {
+    padding: 100px 0;
+  }
+
+  .sn-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  .sn-process-card {
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 32px 24px;
+    position: relative;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .sn-process-card:hover {
+    border-color: #5036F7;
+    box-shadow: 0 12px 24px rgba(80, 54, 247, 0.08);
+  }
+
+  .sn-step-num {
+    font-size: 14px;
+    font-weight: 800;
+    color: #5036F7;
+    background: #F4F3FF;
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .sn-process-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #101828;
+    margin-bottom: 10px;
+  }
+
+  .sn-process-desc {
+    font-size: 14px;
+    color: #475467;
+    line-height: 1.5;
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* SECTION 4: CORE CAPABILITIES - BENTO CARDS                                */
+  /* ------------------------------------------------------------------------- */
+  .sn-capabilities-section {
+    padding: 90px 0;
+    background: #F9FAFB;
+    border-top: 1px solid #EAECF0;
+  }
+
+  .sn-bento-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  .sn-bento-card {
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 20px;
+    padding: 36px;
+  }
+
+  .sn-bento-card.highlight {
+    background: linear-gradient(135deg, #5036F7 0%, #3621D0 100%);
+    color: #FFFFFF;
+  }
+
+  .sn-bento-card.highlight .sn-bento-title,
+  .sn-bento-card.highlight .sn-bento-desc {
+    color: #FFFFFF;
+  }
+
+  .sn-bento-card.highlight .sn-bento-desc {
+    color: #E0EAFF;
+  }
+
+  .sn-bento-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #101828;
+    margin-bottom: 12px;
+  }
+
+  .sn-bento-desc {
+    font-size: 15px;
+    color: #475467;
+    line-height: 1.6;
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* SECTION 5: CTA BANNER (MATCHES HOME PAGE CTA)                             */
+  /* ------------------------------------------------------------------------- */
+  .sn-cta-section {
+    padding: 90px 0 100px 0;
+  }
+
+  .sn-cta-card {
+    background: linear-gradient(135deg, #5036F7 0%, #3621D0 100%);
+    border-radius: 24px;
+    padding: 64px 48px;
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(80, 54, 247, 0.25);
+  }
+
+  .sn-cta-title {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    letter-spacing: -0.01em;
+  }
+
+  .sn-cta-desc {
+    font-size: 18px;
+    color: #E0EAFF;
+    max-width: 580px;
+    margin: 0 auto 32px auto;
+  }
+
+  .sn-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    color: #3621D0 !important;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .sn-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* RESPONSIVE DESIGN                                                         */
+  /* ------------------------------------------------------------------------- */
+  @media (max-width: 992px) {
+    .sn-hero-grid, .sn-story-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .sn-process-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sn-bento-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .sn-title-lg {
+      font-size: 38px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sn-process-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .sn-about-hero {
+      padding: 56px 0;
+    }
+
+    .sn-title-lg {
+      font-size: 30px;
+    }
+
+    .sn-cta-card {
+      padding: 40px 24px;
+    }
+
+    .sn-cta-title {
+      font-size: 28px;
+    }
+  }
+
+/* Preserved inline presentation rules. */
+.sn-about-wrapper .sn-page-inline-1 { font-size: 13px !important; font-weight: 700 !important; color: #5036F7 !important; text-transform: uppercase !important; letter-spacing: 1px !important; margin-bottom: 12px !important; }
+.sn-about-wrapper .sn-page-inline-2 { text-align: right !important; }
+.sn-about-wrapper .sn-page-inline-3 { text-align: right !important; }
+.sn-about-wrapper .sn-page-inline-4 { text-align: center !important; max-width: 640px !important; margin: 0 auto !important; }
+.sn-about-wrapper .sn-page-inline-5 { margin: 0 auto 16px auto !important; }
+.sn-about-wrapper .sn-page-inline-6 { color: #475467 !important; font-size: 16px !important; }
+.sn-about-wrapper .sn-page-inline-7 { font-size: 22px !important; font-weight: 700 !important; margin-bottom: 12px !important; }
+.sn-about-wrapper .sn-page-inline-8 { color: #475467 !important; font-size: 15px !important; line-height: 1.6 !important; }
+.sn-about-wrapper .sn-page-inline-9 { font-size: 22px !important; font-weight: 700 !important; margin-bottom: 12px !important; }
+.sn-about-wrapper .sn-page-inline-10 { color: #475467 !important; font-size: 15px !important; line-height: 1.6 !important; }
+.sn-about-wrapper .sn-page-inline-11 { text-align: center !important; max-width: 600px !important; margin: 0 auto !important; }
+.sn-about-wrapper .sn-page-inline-12 { margin: 0 auto 16px auto !important; }
+.sn-about-wrapper .sn-page-inline-13 { text-align: center !important; max-width: 600px !important; margin: 0 auto !important; }
+.sn-about-wrapper .sn-page-inline-14 { margin: 0 auto 16px auto !important; }

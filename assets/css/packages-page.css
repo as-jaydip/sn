@@ -1,0 +1,400 @@
+/* ========================================================================= */
+  /* RESEARCH PLANS & FAQ PAGE STYLES - HOME PAGE VIBE MATCH (SCOPED)         */
+  /* ========================================================================= */
+  .sn-plans-wrapper {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    color: #101828;
+    background-color: #FFFFFF;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+
+  .sn-plans-wrapper *, 
+  .sn-plans-wrapper *::before, 
+  .sn-plans-wrapper *::after {
+    box-sizing: border-box;
+  }
+
+  .sn-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Core UI Elements */
+  .sn-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: #F4F3FF;
+    border: 1px solid #E0EAFF;
+    border-radius: 20px;
+    color: #5036F7;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+  }
+
+  .sn-badge-dot {
+    width: 6px;
+    height: 6px;
+    background: #5036F7;
+    border-radius: 50%;
+  }
+
+  .sn-title-lg {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #101828;
+    margin-bottom: 20px;
+  }
+
+  .sn-title-md {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: #101828;
+    margin-bottom: 16px;
+  }
+
+  .sn-text-lead {
+    font-size: 18px;
+    color: #475467;
+    line-height: 1.6;
+  }
+
+  .sn-gradient-text {
+    background: linear-gradient(135deg, #5036F7 0%, #3621D0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* HERO SECTION                                                              */
+  /* ------------------------------------------------------------------------- */
+  .sn-plans-hero {
+    padding: 96px 0 60px 0;
+    background: radial-gradient(circle at 50% 0%, rgba(80, 54, 247, 0.06) 0%, rgba(255, 255, 255, 0) 70%);
+    text-align: center;
+  }
+
+  .sn-hero-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* PACKAGES CARDS SECTION                                                    */
+  /* ------------------------------------------------------------------------- */
+  .sn-plans-section {
+    padding: 40px 0 90px 0;
+  }
+
+  .sn-plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: stretch;
+  }
+
+  .sn-plan-card {
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 24px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    position: relative;
+  }
+
+  .sn-plan-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(16, 24, 40, 0.08);
+    border-color: #D0D5DD;
+  }
+
+  .sn-plan-card.featured {
+    border: 2px solid #5036F7;
+    box-shadow: 0 12px 32px rgba(80, 54, 247, 0.12);
+  }
+
+  .sn-popular-tag {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #5036F7 0%, #3621D0 100%);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .sn-plan-header {
+    margin-bottom: 24px;
+  }
+
+  .sn-plan-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: #101828;
+    margin-bottom: 8px;
+  }
+
+  .sn-plan-duration {
+    font-size: 14px;
+    color: #667085;
+    font-weight: 500;
+  }
+
+  .sn-dm-box {
+    background: #F4F3FF;
+    border: 1px dashed #5036F7;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .sn-dm-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: #5036F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .sn-dm-subtext {
+    font-size: 12px;
+    color: #667085;
+    margin-top: 4px;
+  }
+
+  .sn-plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex-grow: 1;
+  }
+
+  .sn-plan-features li {
+    font-size: 15px;
+    color: #475467;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sn-feature-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #F4F3FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .sn-feature-icon svg {
+    width: 12px;
+    height: 12px;
+    stroke: #5036F7;
+    stroke-width: 3;
+    fill: none;
+  }
+
+  .sn-plan-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    gap: 8px;
+  }
+
+  .sn-btn-primary {
+    background: linear-gradient(135deg, #5036F7 0%, #3621D0 100%);
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 12px rgba(80, 54, 247, 0.2);
+  }
+
+  .sn-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(80, 54, 247, 0.3);
+  }
+
+  .sn-btn-secondary {
+    background: #FFFFFF;
+    color: #344054 !important;
+    border: 1px solid #D0D5DD;
+  }
+
+  .sn-btn-secondary:hover {
+    background: #F9FAFB;
+    border-color: #98A2B3;
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* FAQ SECTION                                                               */
+  /* ------------------------------------------------------------------------- */
+  .sn-faq-section {
+    padding: 90px 0;
+    background: #F9FAFB;
+    border-top: 1px solid #EAECF0;
+  }
+
+  .sn-faq-container {
+    max-width: 800px;
+    margin: 48px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sn-faq-item {
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+  }
+
+  .sn-faq-item.active {
+    border-color: #5036F7;
+  }
+
+  .sn-faq-question {
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #101828;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+  }
+
+  .sn-faq-toggle {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    color: #5036F7;
+  }
+
+  .sn-faq-item.active .sn-faq-toggle {
+    transform: rotate(180deg);
+  }
+
+  .sn-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 24px;
+    color: #475467;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .sn-faq-item.active .sn-faq-answer {
+    max-height: 200px;
+    padding: 0 24px 20px 24px;
+  }
+
+  /* ------------------------------------------------------------------------- */
+  /* CTA BANNER                                                                */
+  /* ------------------------------------------------------------------------- */
+  .sn-cta-section {
+    padding: 90px 0 100px 0;
+  }
+
+  .sn-cta-card {
+    background: linear-gradient(135deg, #5036F7 0%, #3621D0 100%);
+    border-radius: 24px;
+    padding: 64px 48px;
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(80, 54, 247, 0.25);
+  }
+
+  .sn-cta-title {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+  }
+
+  .sn-cta-desc {
+    font-size: 18px;
+    color: #E0EAFF;
+    max-width: 580px;
+    margin: 0 auto 32px auto;
+  }
+
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 992px) {
+    .sn-plans-grid {
+      grid-template-columns: 1fr;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .sn-title-lg {
+      font-size: 38px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sn-plans-hero {
+      padding: 56px 0 40px 0;
+    }
+
+    .sn-title-lg {
+      font-size: 30px;
+    }
+
+    .sn-cta-card {
+      padding: 40px 24px;
+    }
+
+    .sn-cta-title {
+      font-size: 28px;
+    }
+
+    .sn-faq-question {
+      font-size: 16px;
+      padding: 16px 20px;
+    }
+  }
+
+/* Preserved inline presentation rules. */
+.sn-plans-wrapper .sn-page-inline-1 { text-align: center !important; max-width: 600px !important; margin: 0 auto !important; }
+.sn-plans-wrapper .sn-page-inline-2 { margin: 0 auto 16px auto !important; }
+.sn-plans-wrapper .sn-page-inline-3 { color: #475467 !important; }
+.sn-plans-wrapper .sn-page-inline-4 { background: #FFFFFF !important; color: #3621D0 !important; width: auto !important; display: inline-flex !important; }
+
+.sn-faq-question { width: 100%; border: 0; background: transparent; font-family: inherit; text-align: left; }
